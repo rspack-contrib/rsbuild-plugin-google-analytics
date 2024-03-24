@@ -1,6 +1,10 @@
 import { defineConfig } from '@rsbuild/core';
-import { pluginExample } from '../src';
+import { pluginGoogleAnalytics } from '../src';
 
 export default defineConfig({
-  plugins: [pluginExample()],
+  plugins: [
+    pluginGoogleAnalytics({
+      id: 'G-xxxxxxxxxx',
+    }),
+  ],
 });

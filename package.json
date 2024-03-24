@@ -1,5 +1,5 @@
 {
-  "name": "rsbuild-plugin-example",
+  "name": "rsbuild-plugin-google-analytics",
   "version": "0.0.0",
   "license": "MIT",
   "type": "module",
@@ -22,6 +22,7 @@
     "dev": "tsup --watch",
     "prepublishOnly": "npm run build"
   },
+  "packageManager": "pnpm@8.15.2",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"

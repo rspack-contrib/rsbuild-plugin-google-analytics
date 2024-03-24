@@ -1,10 +1,10 @@
-# rsbuild-plugin-example
+# rsbuild-plugin-google-analytics
 
-rsbuild-plugin-example is a Rsbuild plugin to do something.
+An Rsbuild plugin to setup Google Analytics in your website.
 
 <p>
-  <a href="https://npmjs.com/package/rsbuild-plugin-example">
-   <img src="https://img.shields.io/npm/v/rsbuild-plugin-example?style=flat-square&colorA=564341&colorB=EDED91" alt="npm version" />
+  <a href="https://npmjs.com/package/rsbuild-plugin-google-analytics">
+   <img src="https://img.shields.io/npm/v/rsbuild-plugin-google-analytics?style=flat-square&colorA=564341&colorB=EDED91" alt="npm version" />
   </a>
     <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square&colorA=564341&colorB=EDED91" alt="license" />
 </p>
@@ -14,17 +14,23 @@ rsbuild-plugin-example is a Rsbuild plugin to do something.
 Install:
 
 ```bash
-npm add rsbuild-plugin-example -D
+npm add rsbuild-plugin-google-analytics -D
 ```
 
 Add plugin to your `rsbuild.config.ts`:
 
 ```ts
 // rsbuild.config.ts
-import { pluginExample } from 'rsbuild-plugin-example';
+import { pluginGoogleAnalytics } from 'rsbuild-plugin-google-analytics';
 
 export default {
-  plugins: [pluginExample()],
+  plugins: [
+    pluginGoogleAnalytics({
+      // replace this with your Google tag ID
+      // see: https://support.google.com/analytics/answer/9539598?hl=en
+      id: 'G-xxxxxxxxxx',
+    }),
+  ],
 };
 ```
 
@@ -32,7 +38,10 @@ export default {
 
 Here are the available options:
 
-| Name | Type      | Description      | Defaults    |
-| ---- | --------- | ---------------- | ----------- |
-| foo  | `string`  | Some description | `undefined` |
-| bar  | `boolean` | Some description | `false`     |
+| Name | Type     | Description   | Defaults    |
+| ---- | -------- | ------------- | ----------- |
+| id   | `string` | Google tag ID | `undefined` |
+
+## License
+
+[MIT](./LICENSE).
