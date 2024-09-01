@@ -23,7 +23,7 @@
     "prepare": "npm run build"
   },
   "devDependencies": {
-    "@rsbuild/core": "^1.0.1-beta.10",
+    "@rsbuild/core": "^1.0.1-rc.0",
     "@types/node": "^20.14.13",
     "prettier": "^3.3.3",
     "tsup": "^8.2.3",
