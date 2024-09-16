@@ -1,15 +1,28 @@
 import type { RsbuildConfig, RsbuildPlugin } from '@rsbuild/core';
 
 export type PluginGoogleAnalyticsOptions = {
+  /**
+   * Google tag ID.
+   */
   id: string;
+  /**
+   * Whether to enable Google Analytics.
+   * @default true
+   */
+  enable?: boolean;
 };
 
 export const pluginGoogleAnalytics = ({
   id,
+  enable = true,
 }: PluginGoogleAnalyticsOptions): RsbuildPlugin => ({
   name: 'rsbuild-plugin-google-analytics',
 
   setup(api) {
+    if (!enable) {
+      return;
+    }
+
     if (!id) {
       throw new Error(
         '[rsbuild-plugin-google-analytics] Google tag ID is required!',
