@@ -6,7 +6,7 @@ An Rsbuild plugin to setup Google Analytics in your website.
   <a href="https://npmjs.com/package/rsbuild-plugin-google-analytics">
    <img src="https://img.shields.io/npm/v/rsbuild-plugin-google-analytics?style=flat-square&colorA=564341&colorB=EDED91" alt="npm version" />
   </a>
-    <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square&colorA=564341&colorB=EDED91" alt="license" />
+  <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square&colorA=564341&colorB=EDED91" alt="license" />
 </p>
 
 ## Usage
@@ -38,9 +38,10 @@ export default {
 
 Here are the available options:
 
-| Name | Type     | Description   | Defaults    |
-| ---- | -------- | ------------- | ----------- |
-| id   | `string` | Google tag ID | `undefined` |
+| Name   | Type      | Description                        | Defaults    |
+| ------ | --------- | ---------------------------------- | ----------- |
+| id     | `string`  | Google tag ID                      | `undefined` |
+| enable | `boolean` | Whether to enable Google Analytics | `true`      |
 
 ## License
 
