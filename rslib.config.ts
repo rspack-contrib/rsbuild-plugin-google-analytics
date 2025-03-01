@@ -6,7 +6,4 @@ export default defineConfig({
 		{ format: 'esm', syntax: 'es2021', dts: true },
 		{ format: 'cjs', syntax: 'es2021' },
 	],
-	output: {
-		target: 'node',
-	},
 });
