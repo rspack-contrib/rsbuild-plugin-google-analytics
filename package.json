@@ -1,6 +1,6 @@
 {
   "name": "rsbuild-plugin-google-analytics",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "repository": "https://github.com/rspack-contrib/rsbuild-plugin-google-analytics",
   "license": "MIT",
   "type": "module",
