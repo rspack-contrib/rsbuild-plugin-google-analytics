@@ -2,6 +2,10 @@
   "name": "rsbuild-plugin-google-analytics",
   "version": "1.0.6",
   "repository": "https://github.com/rstackjs/rsbuild-plugin-google-analytics",
+  "homepage": "https://github.com/rstackjs/rsbuild-plugin-google-analytics#readme",
+  "bugs": {
+    "url": "https://github.com/rstackjs/rsbuild-plugin-google-analytics/issues"
+  },
   "license": "MIT",
   "type": "module",
   "exports": {
